@@ -1,0 +1,164 @@
+.footer-info {
+    background-color: white;
+    height: 100px;
+    width: calc(100% - 350px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    border-top: thin solid #dddddd;
+    color: #bebdbd;
+}
+
+.text {
+    text-align: center;
+    margin: 10px 0 0;
+    font-size: 15px;
+}
+
+header div div {
+    display: inline-block;
+}
+
+header div div p {
+    display: inline-block;
+    color: #9f9f9f;
+    margin: 0;
+}
+
+.schedule {
+    font-size: 12px;
+    margin-left: 25px;
+}
+
+.number {
+    font-size: 20px
+}
+
+.additional-info {
+    font-size: 17px;
+    margin-left: 25px;
+}
+
+.schedule,
+.number,
+.additional-info {
+    margin-top: 10px;
+}
+
+.info-name {
+    margin-top: 5px;
+    margin-bottom: 12px;
+    color: white;
+}
+
+.header-auth {
+    float: right;
+}
+
+.info-div {
+    width: calc(100% - 130px);
+    margin-left: 10px;
+    /*margin-right: 10px;*/
+}
+
+.header-badge {
+    background-color: #EC861C;
+    margin-left: 10px;
+    width: 98.5px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-badge p {
+    color: white;
+}
+
+.header-pizza-name1 {
+    margin-top: 10px;
+    margin-bottom: 0;
+    font-size: 15px;
+}
+
+.header-pizza-name2 {
+    margin-top: 15px;
+    font-size: 25px;
+    margin-bottom: 14px;
+}
+
+.header-lower-div,
+.header-badge {
+    border-left: 1px solid #D66300;
+    /* Ліва границя червоного кольору */
+    border-right: 1px solid #D66300;
+    /*border-right: #bebdbd;*/
+}
+
+.header-lower-div {
+    background-color: #EC861C;
+    position: fixed;
+    width: 98.5px;
+    height: 120px;
+    bottom: 0;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-lower-div hr {
+    width: 80px;
+    border: dashed thin #D26300;
+}
+
+.header-img {
+    position: fixed;
+    bottom: 120px;
+    left: 10px;
+}
+
+.header-lower-div p {
+    text-align: center;
+    margin: 0;
+}
+
+
+.header-discount {
+    transform: scaleY(-1);
+    margin-top: -2px;
+}
+
+body {
+    margin: 0;
+}
+
+.authorization-button,
+.authorization-button-small {
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 13px 8px 13px;
+    color: white;
+    background-color: #e5a949;
+}
+
+.authorization-button-small {
+    display: none;
+}
+
+.header-section {
+    opacity: 0.95;
+    display: flex;
+    position: fixed;
+    align-content: flex-start;
+    z-index: 3;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+    width: calc(100% - 350px);
+    height: 85px;
+    background-color: #333331;
+}
