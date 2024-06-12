@@ -7,7 +7,8 @@
     <title>Pizza Kma</title>
 </head>
 <body>
-<header class="header-section">
+<div class="gui-section">
+<header class="header-section"> <!--header to site, without order section-->
     <div class="header-badge">
         <p class="header-pizza-name1">PIZZA</p>
         <p class="header-pizza-name2">KMA</p>
@@ -30,12 +31,35 @@
             <button class="authorization-button-small" type="submit">Ввійти</button>
         </div>
     </div>
+    <!--bottom badge fixed-->
     <img class="header-img" src="assets/images/discount.svg" alt="object">
     <div class="header-lower-div">
         <p>ЦЬОГО ТИЖНЯ НА ВСЕ</p>
         <hr />
         <p>-20%</p>
     </div>
-</header>
+    </header>
+   <section class="right-section">
+    <div class="order-section"> 
+        <p class="order-text"><strong>Замовлення</strong></p>
+        <div class="shell">
+            <span class="amount"><strong>0</strong></span>
+        </div>
+        <button class="clear-order">Очистити замовлення</button>
+    </div>
+    <div class="order-list"> <!---для замовлення, що зробить користувач-->
+
+    </div>
+    <div class="make-order-section">
+        <div class="order-make-text">
+            <strong class="order-full-price-text">Сума замовлення</strong>
+            <strong class="order-full-price">0 грн</strong>
+        </div>
+        <div class="order-button-div">
+            <button class="order-button">Замовити</button>
+        </div>
+    </div>
+   </section>
+</div>
 </body>
 </html>
