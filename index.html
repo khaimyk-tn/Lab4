@@ -7,59 +7,86 @@
     <title>Pizza Kma</title>
 </head>
 <body>
-<div class="gui-section">
-<header class="header-section"> <!--header to site, without order section-->
-    <div class="header-badge">
-        <p class="header-pizza-name1">PIZZA</p>
-        <p class="header-pizza-name2">KMA</p>
-        <img class="header-discount" src="assets/images/discount.svg" alt="object">
-    </div>
-    <div class="info-div">
-        <div class="header-info">
-            <p class="number">(044) 222 5 222</p>
-            <p class="schedule">24 години/ 7 днів на тиждень</p>
-            <p class="additional-info">Безкоштовна доставка піци</p>
+    <div class="gui-section">
+    <header class="header-section"> <!--header to site, without order section-->
+        <div class="header-badge">
+            <p class="header-pizza-name1">PIZZA</p>
+            <p class="header-pizza-name2">KMA</p>
+            <img class="header-discount" src="assets/images/discount.svg" alt="object">
         </div>
-        <div class="header-auth">
-            <button class="authorization-button" type="submit">Ввійти</button>
+        <div class="info-div">
+            <div class="header-info">
+                <p class="number">(044) 222 5 222</p>
+                <p class="schedule">24 години/ 7 днів на тиждень</p>
+                <p class="additional-info">Безкоштовна доставка піци</p>
+            </div>
+            <div class="header-auth">
+                <button class="authorization-button" type="submit">Ввійти</button>
+            </div>
+            <hr />
+            <div>
+                <p class="info-name">Піца</p>
+            </div>
+            <div class="header-auth">
+                <button class="authorization-button-small" type="submit">Ввійти</button>
+            </div>
         </div>
-        <hr />
-        <div>
-            <p class="info-name">Піца</p>
+        <!--bottom badge fixed-->
+        <img class="header-img" src="assets/images/discount.svg" alt="object">
+        <div class="header-lower-div">
+            <p>ЦЬОГО ТИЖНЯ НА ВСЕ</p>
+            <hr />
+            <p>-20%</p>
         </div>
-        <div class="header-auth">
-            <button class="authorization-button-small" type="submit">Ввійти</button>
+        </header>
+    <section class="right-section">
+        <div class="order-section"> 
+            <p class="order-text"><strong>Замовлення</strong></p>
+            <div class="shell">
+                <span class="amount"><strong>0</strong></span>
+            </div>
+            <button class="clear-order">Очистити замовлення</button>
         </div>
-    </div>
-    <!--bottom badge fixed-->
-    <img class="header-img" src="assets/images/discount.svg" alt="object">
-    <div class="header-lower-div">
-        <p>ЦЬОГО ТИЖНЯ НА ВСЕ</p>
-        <hr />
-        <p>-20%</p>
-    </div>
-    </header>
-   <section class="right-section">
-    <div class="order-section"> 
-        <p class="order-text"><strong>Замовлення</strong></p>
-        <div class="shell">
-            <span class="amount"><strong>0</strong></span>
-        </div>
-        <button class="clear-order">Очистити замовлення</button>
-    </div>
-    <div class="order-list"> <!---для замовлення, що зробить користувач-->
+        <div class="order-list"> <!---для замовлення, що зробить користувач-->
 
-    </div>
-    <div class="make-order-section">
-        <div class="order-make-text">
-            <strong class="order-full-price-text">Сума замовлення</strong>
-            <strong class="order-full-price">0 грн</strong>
         </div>
-        <div class="order-button-div">
-            <button class="order-button">Замовити</button>
+        <div class="make-order-section">
+            <div class="order-make-text">
+                <strong class="order-full-price-text">Сума замовлення</strong>
+                <strong class="order-full-price">0 грн</strong>
+            </div>
+            <div class="order-button-div">
+                <button class="order-button">Замовити</button>
+            </div>
         </div>
+     </section>
     </div>
-   </section>
-</div>
+    <main class="main-main">
+        <section class="main-menu">
+            <div class="main-allPizza">
+                <strong class="main-allPizza-text">Усі піци</strong>
+                <div class="shell">
+                    <span class="amount"><strong>8</strong></span>
+                </div>
+            </div>
+            <div class="main-buttons">
+                <button class="main-button" id="all">Усі</button>
+                <button class="main-button" id="meat">М'ясні</button>
+                <button class="main-button" id="pineapples">З ананасами</button>
+                <button class="main-button" id="mushrooms">З грибами</button>
+                <button class="main-button" id="seafood">З морепродуктами</button>
+                <button class="main-button" id="vega">Вега</button>
+            </div>
+        </section>
+            <section class="main-section">
+                <div class="pizza-allCards">
+                </div>
+            </section>
+            <footer class="footer-info">
+                <span class="text">Pizza.22 - практичний проєкт в межах курсу JavaScript в Києво-Могилянській Академії</span>
+                <span class="text">Доставка піци не здійснюється</span>
+            </footer>
+            <script type="module" src="../src/script.js"></script>
+    </main>
 </body>
 </html>
