@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Звіт по піцам</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="icon" href="assets/images/map-icon.png" type="image/x-icon">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['corechart'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var basketOrder = JSON.parse(localStorage.getItem('basketOrder')) || [];
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'Назва піци');
+            data.addColumn('number', 'Кількість');
+
+            basketOrder.forEach(function (order) {
+                data.addRow([order.name, parseInt(order.count)]);
+            });
+
+            var options = {
+                title: 'Графік по піцах, які обрав користувач',
+                is3D: true,
+                titleTextStyle: {
+                    fontSize: 24, // Розмір шрифту заголовку
+                    bold: true
+                },
+                legend: {
+                    textStyle: {
+                        fontSize: 16 // Розмір шрифту легенди
+                    }
+                },
+                pieSliceTextStyle: {
+                    fontSize: 16 // Розмір шрифту підписів
+                }
+            };
+
+            var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <header class="header-section">
+            <div class="header-badge">
+                <p class="header-pizza-name1">PIZZA</p>
+                <p class="header-pizza-name2">KMA</p>
+                <picture class="header-discount-img">
+                    <img class="header-discount" src="assets/images/discount.svg" alt="object">
+                </picture>
+            </div>
+            <div class="info-div">
+                <div class="header-info">
+                    <p class="number">(044) 222 5 222</p>
+                    <p class="schedule">24 години/ 7 днів на тиждень</p>
+                    <p class="additional-info">Безкоштовна доставка піци</p>
+                </div>
+                <div class="header-auth">
+                    <button class="authorization-button" type="submit">Ввійти</button>
+                </div>
+                <hr />
+                <div>
+                    <p class="info-name">Піца</p>
+                </div>
+                <div class="header-auth">
+                    <button class="authorization-button-small" type="submit">Ввійти</button>
+                </div>
+            </div>
+        </header>
+    </header>
+    <div class="icon">
+        <a href="index.html">
+            <img src="assets/images/home-icon.png" alt="">
+        </a>
+    </div>
+    <main>
+        <div id="piechart" style="width: 900px; height: 500px;"></div>
+    </main>
+</body>
+
+</html>
